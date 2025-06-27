@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello {{ saved_name if saved_name is not none else "Stranger" }}!</h1>
+    <a href="/delete_cookie">Delete your cookie</a>
+    <br><br>
+    <form action="/validate" method="post">
+        <input type="text" name="name" placeholder="name">
+        <input type="text" name="password" placeholder="password">
+        <input type="submit" value="save name">
+    </form>
+</body>
+</html>
